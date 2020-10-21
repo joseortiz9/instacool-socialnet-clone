@@ -5,10 +5,10 @@ import Card from "../../components/card.comp";
 import Title from "../../components/title.comp";
 import Container from "../../components/container.comp";
 import LoginForm from "../../components/loginform.comp";
-import { login as loginThunk, ILogin } from '../../ducks/Users';
+import { ILogin, login as loginThunk } from '../../ducks/Users';
 
 interface ILoginProps {
-    login: (a: ILogin) => void
+    login: (values: ILogin) => void
 }
 
 class Login extends React.Component<ILoginProps> {

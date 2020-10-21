@@ -11,8 +11,8 @@ class LoginForm extends Component<InjectedFormProps> {
         const { handleSubmit } = this.props
         return (
             <form onSubmit={handleSubmit}>
-                <Field label='Correo' placeholder='Correo' name='email' type='email' componen={Input} />
-                <Field label='Contraseña' placeholder='Contraseña' name='password' type='password' componen={Input} />
+                <Field label='Correo' placeholder='Correo' name='email' type='email' component={Input} />
+                <Field label='Contraseña' placeholder='Contraseña' name='password' type='password' component={Input} />
                 <Button block={true}>Enviar</Button>
                 <Center>
                     <Link to='/register'>Ir al registro</Link>
