@@ -10,7 +10,7 @@ import {connect} from "react-redux";
 import {ThunkDispatch} from "redux-thunk";
 
 interface IRegisterProps {
-    register: (a: ILogin) => void
+    register: (a: object) => void
 }
 
 class Register extends React.Component<IRegisterProps> {

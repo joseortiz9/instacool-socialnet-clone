@@ -12,6 +12,7 @@ export default function reducer(state = {}, /*action*/) {
 
 export const login = ({ email, password }: ILogin) =>
     async (dispatch: Dispatch, getState: () => any, { fireAuth }: IServices) => {
+        console.log(email, password)
         const result = await fireAuth.signInWithEmailAndPassword(email, password)
     }
 
